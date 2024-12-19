@@ -7,3 +7,8 @@ Filme filme4 = new("Um sonho de Liberdade", 120, new List<string>() { "teste" })
 Filme filme5 = new("Um sonho de Liberdade", 120, new List<string>() { "teste" });
 
 List<Filme> filmes = new() { filme1, filme2, filme3, filme4, filme5 };
+
+foreach(Filme filme in  filmes)
+{
+    filme.ExibirInformacoes();
+}

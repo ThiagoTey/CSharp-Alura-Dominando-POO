@@ -18,7 +18,7 @@ class Musica
     {
         Console.WriteLine($"Nome: {Nome}");
         Console.WriteLine($"Artista: {Artista.Nome}");
-        Console.WriteLine($"Duração: {Duracao}");
+        Console.WriteLine($"Duração: {Duracao} minutos");
         if (Disponivel)
         {
             Console.WriteLine("Disponível no plano.");

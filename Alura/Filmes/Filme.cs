@@ -25,9 +25,17 @@ class Filme
             Console.WriteLine("Não há elenco registrado para este filme.");
             return;
         }
-        Console.WriteLine("Elenco : ");
-        foreach (var item in Elenco) {
-            Console.WriteLine(item);
+        Console.Write("Elenco : ");
+        foreach (string ator in Elenco) {
+            Console.Write($" - {ator}");
         }
+    }
+
+    public void ExibirInformacoes()
+    {
+        Console.WriteLine($"Filme : {Titulo}");
+        Console.WriteLine($"Duracao : {Duracao} Minutos");
+        ExibirElenco();
+        Console.WriteLine("\n");
     }
 }
