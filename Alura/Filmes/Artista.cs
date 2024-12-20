@@ -5,9 +5,17 @@ class Artista
     {
         Nome = nome;
         Idade = idade;
+        Filmes = new List<Filme>();
     }
 
-    public string Nome { get; set; }
-    public int Idade { get; set; }
+    public string Nome { get; }
+    public int Idade { get; }
     public List<Filme> Filmes { get; set; }
+
+    public void AdicionarFilme(Filme filme)
+    {
+        Filmes.Add(filme);
+        if (!filme.Elenco.Contains(this)) { filme.AdicionarElenco(this); }
+    }
+
 }

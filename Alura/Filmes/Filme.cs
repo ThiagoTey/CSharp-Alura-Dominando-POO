@@ -1,20 +1,28 @@
 ﻿namespace Alura.Filmes;
 class Filme
 {
-    public Filme(string titulo, int duracao, List<string>? elenco)
+    public Filme(string titulo, int duracao, List<Artista>? elenco)
     {
         Titulo = titulo;
         Duracao = duracao;
-        Elenco = elenco ?? new List<string>();
+        Elenco = elenco ?? new List<Artista>();
+        if (elenco != null)
+        {
+            foreach (Artista artista in elenco)
+            {
+                artista.AdicionarFilme(this);
+            }
+        }
     }
 
     public string Titulo { get; }
     public int Duracao { get; }
-    public List<string> Elenco { get; set; }
+    public List<Artista> Elenco { get; set; }
 
-    public void AdicionarElenco(string ator)
+    public void AdicionarElenco(Artista artista)
     {
-        Elenco.Add(ator);
+        Elenco.Add(artista);
+        if (!artista.Filmes.Contains(this)) { artista.AdicionarFilme(this); }
         Console.WriteLine("Elenco adicionado");
     }
 
@@ -26,8 +34,8 @@ class Filme
             return;
         }
         Console.Write("Elenco : ");
-        foreach (string ator in Elenco) {
-            Console.Write($" - {ator}");
+        foreach (Artista ator in Elenco) {
+            Console.Write($" - {ator.Nome}");
         }
     }
 
