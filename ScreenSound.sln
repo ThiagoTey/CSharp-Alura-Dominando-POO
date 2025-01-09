@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automobilistica", "Automobi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Album", "Album\Album.csproj", "{01ED6C10-CE9E-43DF-A7A4-A301ABCC75C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormasGeometricas", "FormasGeometricas\FormasGeometricas.csproj", "{86E0C695-7D6A-45D4-B35C-7570F0373C0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{01ED6C10-CE9E-43DF-A7A4-A301ABCC75C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01ED6C10-CE9E-43DF-A7A4-A301ABCC75C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01ED6C10-CE9E-43DF-A7A4-A301ABCC75C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E0C695-7D6A-45D4-B35C-7570F0373C0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E0C695-7D6A-45D4-B35C-7570F0373C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E0C695-7D6A-45D4-B35C-7570F0373C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E0C695-7D6A-45D4-B35C-7570F0373C0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
