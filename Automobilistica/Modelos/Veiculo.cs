@@ -1,6 +1,6 @@
 ﻿namespace Automobilistica.Modelos;
 
-internal class Veiculo
+internal class Veiculo : IPilotavel, IVoavel
 {
     public Veiculo(string marca, string modelo, int ano)
     {
