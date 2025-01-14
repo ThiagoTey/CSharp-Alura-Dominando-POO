@@ -1,5 +1,4 @@
-﻿using System.Reflection.Emit;
-using ScreenSound.Menus;
+﻿using ScreenSound.Menus;
 using ScreenSound.Modelos;
 
 Banda linkinPark = new("Linkin Park");
